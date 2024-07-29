@@ -1,0 +1,22 @@
+.footer-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  /* border-top: 1px solid black; */
+  border: 1px solid #800080;
+  margin-top: 20px;
+}
+
+.address p {
+  font-size: 18px;
+}
+
+.contact-info p {
+  font-size: 18px;
+}
+
+.contact-info p i,
+.address i {
+  padding-right: 10px;
+}

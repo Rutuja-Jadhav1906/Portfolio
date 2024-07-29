@@ -1,0 +1,78 @@
+.about {
+  display: flex;
+  margin-top: 30px;
+}
+
+.my-img img {
+  height: 400px;
+  width: 400px;
+  border-radius: 16px;
+}
+
+.my-info {
+  padding-left: 30px;
+  text-align: justify;
+}
+
+.about-me,
+.mywork,
+.acheivements {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.about-me .card,
+.mywork .card {
+  margin: 0px 20px 0px 20px;
+  padding: 10px;
+  line-height: 30px;
+  transition: 0.5s;
+  color: white;
+  background: transparent;
+  border: none;
+  max-width: 600px;
+}
+
+.about .card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  /* padding: 5px; */
+  border: 1px solid #800080;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: start; */
+  /* gap: 20px; */
+}
+
+.about-skill {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.about-skill p {
+  min-width: 150px;
+  font-size: 16px;
+}
+
+.about-skill hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 8px;
+  border-radius: 50px;
+  /* background: linear-gradient(264deg, #ff7e5f -5.09%, #feb47b 106.28%); */
+  /* background: linear-gradient(264deg, #7f00ff -5.09%, #e100ff 106.28%); */
+  background: linear-gradient(264deg, #ff0080 -5.09%, #800080 106.28%);
+}
+
+.about-skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}

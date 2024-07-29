@@ -1,0 +1,35 @@
+.contact-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact-body input,
+.contact-body textarea {
+  background: transparent;
+  border: 1px solid rgb(164, 160, 160);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.contact-body input {
+  height: 48px;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-contact {
+  padding: 10px 10px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  /* background-color: rgb(203, 62, 85); */
+  background: linear-gradient(264deg, #ff0080 -5.09%, #800080 106.28%);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}

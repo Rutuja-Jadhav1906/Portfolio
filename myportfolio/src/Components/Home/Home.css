@@ -1,0 +1,39 @@
+.home-body {
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.home-info h5 {
+  /* text-align: justify; */
+  width: 800px;
+}
+
+.home-info h1 {
+  font-weight: 700;
+  background: linear-gradient(264deg, #ff0080 -5.09%, #800080 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-info h5 {
+  margin-top: 20px;
+  line-height: 40px;
+  text-align: center;
+}
