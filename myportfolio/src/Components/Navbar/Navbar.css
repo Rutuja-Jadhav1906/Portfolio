@@ -1,32 +1,67 @@
-.nav-body {
+/* Navbar Container */
+.navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: black;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 100;
 }
 
-.nav-body a {
-  color: white;
-  font-size: 18px;
+/* Brand Name */
+.navbar-brand h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(160deg, #f7c2d4, #a7c5eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
 }
 
-.nav-body a:hover {
-  color: white;
-}
-
-.nav-options {
+/* Navigation Links */
+.navbar-links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-contact {
-  padding: 10px 10px;
-  border-radius: 50px;
-  /* background-color: rgb(203, 62, 85); */
-  background: linear-gradient(264deg, #ff0080 -5.09%, #800080 106.28%);
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.5s;
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: linear-gradient(160deg, #f7c2d4, #a7c5eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6d2080;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
 }

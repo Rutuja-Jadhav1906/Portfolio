@@ -28,26 +28,32 @@ const Contact = () => {
   return (
     <div className="contact-body">
       <div className="container row">
-        <div className="col-8 offset-2">
-          <form onSubmit={onSubmit} className="contact-right">
-            <label htmlFor="">Your Name:</label>
-            <input type="text" placeholder="Enter your name" name="name" />
-            <br />
-            <label htmlFor="">Your email:</label>
-            <input type="email" placeholder="Enter your email" name="email" />
-            <br />
-            <label htmlFor="">Write your message here:</label>
+        <div className="col-10 offset-1 col-md-8 offset-md-2">
+          <form onSubmit={onSubmit} className="contact-form">
+            <h2>Get in Touch</h2>
+            <label htmlFor="name">Your Name:</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              name="name"
+              required
+            />
+            <label htmlFor="email">Your Email:</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              name="email"
+              required
+            />
+            <label htmlFor="message">Your Message:</label>
             <textarea
               name="message"
               rows="5"
-              placeholder="Enter your message"
+              placeholder="Write your message"
+              required
             ></textarea>
-            <br />
-            <button
-              className="contact-submit col-3 form-contact "
-              type="submit"
-            >
-              Submit now
+            <button className="contact-submit" type="submit">
+              Send Message
             </button>
           </form>
         </div>
